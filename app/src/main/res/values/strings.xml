@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">GenericRVAdpater</string>
+
+    <string name="txt_question_car">Are you Robot?</string>
+    <string name="txt_yes">Yes</string>
+    <string name="txt_no">No</string>
+    <string name="txt_description_car">Describe your profile in a few words</string>
+    <string name="txt_multiple_choice_question">Andorid ?</string>
+    <string name="txt_data_list_header">Data List</string>
+    <string name="txt_question1"> Jetpack</string>
+    <string name="txt_question2">AndroidX</string>
+    <string name="txt_question3"> Live Data</string>
+    <string name="txt_multiple_choice_question2">Andorid Component?</string>
+    <string name="txt_question4"> activity</string>
+    <string name="txt_question5">fragment</string>
+    <string name="txt_question6"> Content provider</string>
+</resources>

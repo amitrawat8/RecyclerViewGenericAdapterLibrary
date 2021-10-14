@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="model"
+            type="com.rvlibrary.data.model.DataItem" />
+
+
+        <variable
+            name="actionItemListener"
+            type="com.rvlibrary.ui.OnDataItemListClickListener" />
+
+
+        <variable
+            name="position"
+            type="Integer" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:onClick="@{() -> actionItemListener.OnDataItemListClickListener(position, model)}"
+        android:padding="@dimen/activity_horizontal_margin">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:scaleType="centerInside"
+            app:imageResource="@{model.imgId}" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="278dp"
+            android:layout_height="28dp"
+            android:gravity="center_vertical"
+            android:text="@{model.description}"
+
+
+            android:textColor="@color/colorBlack"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            app:layout_constraintLeft_toRightOf="@+id/imageView"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="9dp" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
